@@ -1,0 +1,41 @@
+.testimony {
+    /* border: 1px solid red; */
+    /* gap: 16px; */
+    Padding-block-start: 40px;
+    padding-block-end: 40px;
+}
+
+.testimony-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+}
+.testimony-image img {
+    max-inline-size: 100%;
+} 
+
+
+
+@media screen and  (min-width: 768px) {
+    .testimony {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        padding-block-start: 80px;
+        padding-block-end: 80px;
+    }
+.testimony-description {
+    flex: 1;
+    text-align: center;
+}
+
+.testimony:nth-child(odd) .testimony-image{
+/* border: 10px solid red; */
+order: 2;
+flex: 1;
+text-align: center;
+}
+
+
+}
